@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Choose Your Favorite Type of Blue! <3</title>
+<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+<style type="text/css">
+	body {
+		background background-size: cover;
+		background-image: url(https://www.freepik.com/free-photos-vectors/light-blue-background);
+		color: black;
+		margin-left: 20%;
+		margin-right: 20%;
+		
+	}
+
+	h1 {
+		
+		text-align: center;
+		color: black;
+	}
+
+	fieldset {
+		background-color: darkblue;
+	}
+
+	input {
+		border-radius: 8px;
+	}
+
+	img {
+		width: 30%;
+		border-radius: 60px;
+		border: 5px;
+	}
+
+	legend {
+		color: deepskyblue;
+	}
+
+	form {
+		border-radius: 5px;
+	}
+</style>
+</head>
+<body>
+	<form>
+		<h1>Registration</h1>
+		<img src="avatarblackwomen.png">
+		<hr />
+
+		<fieldset>
+			<legend>Information</legend>
+			<br />
+
+			<!-- METHOD 1 -->
+			<label>
+				First Name: <input type="text" name="fname">
+			</label>
+			<br />
+			
+			<!-- METHOD -->
+			<label for="last-name">Last Name: </label>
+			<input id="last-name" type="lname">
+			<br />
+			
+			<label for="email">Email: </label>
+			<input id="email" type="text" name="em">
+			<br />
+
+			<label for="username">Username: </label>
+			<input id="username" name="um">
+			<br />
+
+			<label for="password">Password: </label>
+			<input id="password" name="pw">
+		</fieldset>
+		<hr />
+		<fieldset>
+			<legend>What Is Your Favorite Type of Blue?</legend>
+
+			<input type="checkbox" name="type of blue-1" id="type of blue1">
+			<label for="type of blue1">Azure</label>
+			<br />
+
+			<input type="checkbox" name="type of blue-2" id="type of blue2">
+			<label for="type of blue2">Navy</label>
+			<br />
+
+			<input type="checkbox" name="type of blue-3" id="type of blue3">
+			<label for="type of blue3">Baby</label>
+		</fieldset>
+		<hr />
+
+		<fieldset>
+			<!-- the NAME of the input type must be the same -->
+			<legend>Are You Satisfied With Your Answers?</legend>
+			<input type="radio" id="yes" name="answers" value="yes">
+			<label for="yes">Yes</label>
+			<input type="radio" id="no" name="answers" value="no">
+			<label for="no">No</label>
+		</fieldset>
+		<hr />
+
+		<input type="submit" value="Ready to submit?">
+		<input type="reset" value="Wait! let me redo it">
+
+	</form>
+</body>
+</html>
